@@ -11,6 +11,7 @@ public class MahasiswaDataView <T extends DataView> {
 
     protected String getFields() {
         //return String[] array = {data.getNim(),data.getNama(), data.getEmail(), data.getUmur()};
+        return String[] fields = {"nim","nama","email","umur"};
     }
 
     protected T convertValuesToModel(String[]values) {
@@ -18,6 +19,6 @@ public class MahasiswaDataView <T extends DataView> {
     }
 
     protected String[]convertModelToValues(Mahasiswa data){ 
-
+        return T [] array = {data.getNim(),data.getNama(), data.getEmail(), data.getUmur()};
     }
 }
