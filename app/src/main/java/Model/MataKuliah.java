@@ -26,16 +26,16 @@ public class MataKuliah {
         return semester;
     }
 
-    public void setKode() {
+    public void setKode(String kode) {
         this.kode = kode;
     }
-    public void setNama() {
+    public void setNama(String nama) {
         this.nama = nama;
     }
-    public void setJumlahSks() {
+    public void setJumlahSks(int jumlahSks) {
         this.jumlahSks = jumlahSks;
     }
-    public void setSemester(){
+    public void setSemester(int semester){
         this.semester= semester;
     }
 }

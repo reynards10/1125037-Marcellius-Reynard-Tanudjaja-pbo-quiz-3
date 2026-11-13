@@ -10,7 +10,6 @@ public class MahasiswaDataView <T extends DataView> {
     }
 
     protected String getFields() {
-        //return String[] array = {data.getNim(),data.getNama(), data.getEmail(), data.getUmur()};
         return String[] fields = {"nim","nama","email","umur"};
     }
 

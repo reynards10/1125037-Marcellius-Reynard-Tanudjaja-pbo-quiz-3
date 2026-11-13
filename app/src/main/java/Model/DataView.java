@@ -24,6 +24,8 @@ public abstract class DataView<T> {
 
 
     public void printByPk(String primaryKey) {
+        String [] fields = this.getFields();
+        T record = this.records.get
 
     }
 
@@ -37,11 +39,21 @@ public abstract class DataView<T> {
     }
 
     public void showUpdateForm() {
-        
+        String [] fields = this.getFields();
+        T record = this.records.get(i);
+            String [] values = this.convertValuesToModels(record);
+        for (int i = 0; i < fields.length; i++){
+            System.out.print(fields[i]+ " ");
+        }
     }
 
     public void showDeleteForm() {
-
+        String [] fields = this.getFields();
+        T record = this.records.get(i);
+            String [] values = this.convertModelToValues(record);
+        for (int i = 0; i < fields.length; i++){
+            System.out.print(fields[i]+ " ");
+        }
     }
 
     protected abstract String getPrimaryKeyValue(T data);
